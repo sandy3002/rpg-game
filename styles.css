@@ -53,4 +53,28 @@ body {
   .i1{
     padding-top: 250px;
     padding-left: 100px;
+    animation-name: player;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
   }
+  .i2{
+    animation-name: dragon;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes player{
+    0% {padding-left: 100px;}
+    25% {padding-left: 200px;}
+    50% {padding-left: 100px;}
+    75% {padding-left: 0;}
+    100% {padding-left: 100px;}
+  }
+  @keyframes dragon{
+    0% {rotate: 0;}
+    25% {rotate: 10deg;}
+    50% {padding-top: 100px;}
+    75% {rotate: -10deg;}
+    100% {padding-top: 0;}
+  }
+
